@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<title>Default Landing Page Header</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200;1,600&display=swap">
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<link rel="stylesheet" href="/css/style-header.css">
+
+<link rel="stylesheet" href="/css/style.css"><!--Set the stylesheet here for body-->
+<link rel="stylesheet" href="/css/style-footer.css"><!--Set the stylesheet here for footer-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="header" id="myHeader">
+    <a href="/" class="logo" >
+        <img th:src="@{/images/TEST_LOGO_1.png}" class="logo-img"/>
+    </a>
+    <div class="header-right" id="myTopnav" >
+<!--        <a href="/">Welcome</a>--><!--Removing the Welcome button-->
+        <div class="dropdown">
+            <a href="activities ">Activities</a>
+            <div class="dropdown-margin">
+                <div class="dropdown-options">
+                    <a href="horseback">Horseback Riding</a>
+                    <a href="cattle_drive">Cattle Drive</a>
+                    <a href="group_events">Group Events</a>
+                    <a href="fishing">Fishing</a>
+                    <a href="wagon_ride">Wagon Ride</a>
+                    <a href="picnics">Picnics</a>
+                </div>
+            </div>
+
+        </div><!--DropDown Activities-->
+
+        <a href="gallery">Gallery</a>
+        <a href="FAQ">FAQ</a>
+        <div class="dropdown">
+            <a href="">More</a>
+            <div class="dropdown-margin">
+                <div class="dropdown-options">
+                    <a href="about_us">About Us</a>
+                    <a href="blog">Blog</a>
+                    <a href="location">Location</a>
+                </div>
+            </div>
+
+        </div><!--DropDown More-->
+        <a class="active" href="https://squareup.com/appointments/book/frllwoy8luwjtf/LARBA2ZHTWBSM/start">Book Now</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a class="active icon" href="https://squareup.com/appointments/book/frllwoy8luwjtf/LARBA2ZHTWBSM/start">Book Now</a>
+
+    </div>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="myFunction()"><i class="fa fa-xmark"></i></a>
+<!--        <a href="/">Welcome</a>--><!--Removing Welcome Button-->
+<!--        <a href="activities" >Activities</a>-->
+        <button href="activities" class="dropdown-btn-sp" >Activities
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container-sp">
+            <a href="horseback">Horseback Riding</a>
+            <a href="cattle_drive">Cattle Drive</a>
+            <a href="group_events">Group Events</a>
+            <a href="fishing">Fishing</a>
+            <a href="wagon_ride">Wagon Ride</a>
+            <a href="picnics">Picnics</a>
+        </div>
+        <a href="gallery">Gallery</a>
+        <a href="FAQ">FAQ</a>
+        <button href="activities" class="dropdown-btn-sp" >More
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container-sp">
+            <a href="about_us">About Us</a>
+            <a href="blog">Blog</a>
+            <a href="location">Location</a>
+        </div>
+        <a class="active" href="https://squareup.com/appointments/book/frllwoy8luwjtf/LARBA2ZHTWBSM/start">Book Now</a>
+
+    </div>
+</div>
+<script type="text/javascript" th:src="@{/js/header-actions.js}"></script>
+</head>
+<body>
+
+</body>
+</html>

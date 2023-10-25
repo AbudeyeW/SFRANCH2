@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="landing_header">
+  <meta charset="UTF-8">
+  <title>Default Landing Page Header</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+  <div class="header">
+
+    <a href="index" class="logo">
+      <img th:src="@{/images/TEST_LOGO_1.png}" class="logo-img"/>
+    </a>
+    <div class="header-right">
+      <a href="welcome">Welcome</a>
+      <a href="activities">Activities</a>
+      <a href="gallery">Gallery</a>
+      <a href="FAQ">FAQ</a>
+      <a class="active" href="Booking">Booking</a>
+    </div>
+  </div>
+</head>
+<body>
+
+</body>
+</html>
