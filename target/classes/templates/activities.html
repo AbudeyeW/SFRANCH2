@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:insert="fragments/landing_header_withmobile.html">
+  <title>Getting Started: Serving Web Content</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p class="activity-title">Activities</p>
+<div class="activity-row" id="anchor_horseback_riding">
+  <div class="activity-item" >
+    <div class="flex-img" >
+      <img th:src="@{/images/TRAIL_RIDE.jpg}" alt="Activity 1">
+    </div>
+    <div class="activity-description" >
+      <h3>Horseback Riding </h3>
+      <p>
+        Experience the thrill of horseback riding on picturesque trails,
+        immersing yourself in the beauty of nature. Our experienced guides
+        accompany you, fostering a transformative journey as you connect
+        with gentle horses and find solace from life's demands. Strengthen
+        your core, improve balance, and reconnect with yourself through
+        the serenity of the natural world. Book your trail ride today and
+        embrace the transformative power of horseback riding.
+      </p>
+      <a href="horseback">
+        <button class="activity-read-more">Read more</button>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<div class="activity-row" id="anchor_cattle_drive">
+  <div class="activity-item reverse">
+    <div class="activity-description">
+      <h3>Cattle Drive</h3>
+      <p>Embrace the Spirit of the Wild West on our exhilarating Cattle Drive adventure.
+        Step into the boots of a cowboy or cowgirl as you wrangle and drive cattle across
+        the rugged terrain. Experience the thrill of working alongside our seasoned cowhands,
+        herding and guiding the majestic herd. Immerse yourself in the rich history and
+        traditions of the Old West while honing your horsemanship skills.</p>
+      <a href="cattle_drive">
+        <button class="activity-read-more">Read more</button>
+      </a>
+    </div>
+    <div class="flex-img">
+      <img th:src="@{/images/CATTLE_DRIVE.jpg}" alt="Activity 2">
+    </div>
+  </div>
+</div>
+
+<div class="activity-row" id="anchor_group_events">
+  <div class="activity-item">
+    <div class="flex-img">
+      <img th:src="@{/images/EVENTS.jpg}" alt="Activity 3">
+
+    </div>
+    <div class="activity-description">
+      <h3>Group Events</h3>
+      <p>Immerse yourself in a world of personalized events at our ranch,
+        where every detail is crafted to create unforgettable moments just
+        for you. From intimate weddings in rustic settings to milestone
+        celebrations amidst nature's beauty. Experience the excitement of
+        team-building activities, corporate retreats, and private gatherings
+        designed to inspire and foster connections. Celebrate life's special
+        moments with us and create cherished memories that will last a lifetime.</p>
+      <a href="group_events">
+        <button class="activity-read-more">Read more</button>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="activity-row" id="anchor_fishing">
+  <div class="activity-item reverse">
+    <div class="activity-description">
+      <h3>Fishing</h3>
+      <p>Experience the thrill of reeling in the big one in the heart of Texas.
+        Our fishing adventure is tailor-made for male anglers who crave excitement
+        and a taste of the great outdoors. Cast your line into our well-stocked waters,
+        where trophy-worthy fish await. Feel the rush of adrenaline as you battle against
+        nature's finest, surrounded by the rugged beauty of Texas. It's time to unleash
+        your inner angler and create unforgettable fishing memories that will have you hooked
+        for life.</p>
+      <a href="fishing">
+        <button class="activity-read-more">Read more</button>
+      </a>
+    </div>
+    <div class="flex-img">
+      <img th:src="@{/images/FISHING.jpg}" alt="Activity 4">
+    </div>
+  </div>
+</div>
+
+<div class="activity-row" id="anchor_wagon_ride">
+  <div class="activity-item">
+    <div class="flex-img">
+      <img th:src="@{/images/WAGON_RIDE.jpg}" alt="Activity 5">
+    </div>
+    <div class="activity-description">
+      <h3>Wagon Ride</h3>
+      <p>Step back in time and enjoy the nostalgic charm of a Wagon Ride
+        through the picturesque landscapes of our ranch. Relax and take in
+        the beauty of nature as our gentle horses lead you on a leisurely journey.
+        Feel the gentle sway of the wagon, hear the clip-clop of hooves, and breathe
+        in the fresh country air. It's the perfect opportunity to unwind, connect with
+        loved ones, and create lasting memories. </p>
+      <a href="wagon_ride">
+        <button class="activity-read-more">Read more</button>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="activity-row" id="anchor_picnics">
+  <div class="activity-item reverse">
+    <div class="activity-description activity-last">
+      <h3>Picnics</h3>
+      <p>Escape the hustle and bustle of daily life with a charming picnic
+        amidst the natural beauty of our ranch. Find your perfect spot,
+        whether it's beneath the shade of towering trees or by the serene
+        waterside. Indulge in a delightful spread of delectable treats,
+        savoring the flavors while surrounded by the sights and sounds of
+        nature. Relax, unwind, and create cherished memories as you enjoy
+        quality time with loved ones in this idyllic setting.</p>
+      <a href="picnics">
+        <button class="activity-read-more">Read more</button>
+      </a>
+    </div>
+    <div class="flex-img">
+      <img th:src="@{/images/PICNIC.png}" alt="Activity 4">
+    </div>
+  </div>
+</div>
+
+<footer th:insert="fragments/my-footer.html"></footer>
+
+</p>
+</body>
+</html>
