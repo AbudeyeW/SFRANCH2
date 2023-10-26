@@ -39,7 +39,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
-          git config --global user.name "Wilfredo Abudeye"
+          git config --global user.name "AbudeyeW"
           git config --global user.email "wilfredo.abudeye@gmail.com"
           git checkout -b gh-pages
           git add src/main/resources/static/css src/main/resources/static/images src/main/resources/static/js src/main/resources/templates/fragments src/main/resources/templates
