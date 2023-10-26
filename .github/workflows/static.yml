@@ -20,9 +20,6 @@ jobs:
         with:
           node-version: 16
 
-      - name: Install Dependencies
-        run: npm install  # If you have npm dependencies to install, replace with the appropriate command.
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
